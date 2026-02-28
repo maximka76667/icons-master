@@ -1,18 +1,17 @@
 {
-  "name": "@maximka76667/icons-manager",
-  "version": "1.0.0",
+  "name": "@maximka76667/icons-master",
+  "version": "1.0.1",
   "description": "CLI tool to manage lucide-react icon exports",
   "main": "bin/index.js",
   "bin": {
-    "icons-manager": "bin/index.js"
+    "icons-master": "bin/index.js"
   },
   "files": [
-    "bin/",
-    "target/release/icons-manager",
-    "target/release/icons-manager.exe"
+    "bin/"
   ],
   "scripts": {
     "build": "cargo build --release",
-    "prepublishOnly": "npm run build"
+    "copy-bin": "if not exist bin mkdir bin && copy /y target\\release\\icons-master.exe bin\\",
+    "prepublishOnly": "npm run build && npm run copy-bin"
   }
 }
