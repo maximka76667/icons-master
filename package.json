@@ -1,0 +1,18 @@
+{
+  "name": "@maximka76667/icons-manager",
+  "version": "1.0.0",
+  "description": "CLI tool to manage lucide-react icon exports",
+  "main": "bin/index.js",
+  "bin": {
+    "icons-manager": "bin/index.js"
+  },
+  "files": [
+    "bin/",
+    "target/release/icons-manager",
+    "target/release/icons-manager.exe"
+  ],
+  "scripts": {
+    "build": "cargo build --release",
+    "prepublishOnly": "npm run build"
+  }
+}
