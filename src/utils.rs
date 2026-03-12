@@ -34,6 +34,7 @@ pub fn create_temp_dir(prefix: &str, dir_in: PathBuf) -> TempDir {
     Builder::new().prefix(prefix).tempdir_in(dir_in).unwrap()
 }
 
+// test
 #[cfg(test)]
 mod tests {
     use std::path::Path;
