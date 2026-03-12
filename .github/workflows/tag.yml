@@ -13,8 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4.2.2
-        with:
-          token: ${{ secrets.RELEASE_TOKEN }}
 
       - name: Read version from package.json
         id: version
