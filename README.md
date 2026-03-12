@@ -10,6 +10,8 @@ Automatically fetches icon metadata, determines the correct category, and keeps 
 npm install @maximka76667/icons-master
 ```
 
+> If you install it globally with `-g` flag you could run it without `npx`
+
 The correct binary for your platform is downloaded automatically on first run.
 
 ## Usage
@@ -17,13 +19,13 @@ The correct binary for your platform is downloaded automatically on first run.
 ### Add an icon
 
 ```bash
-icons-master add <icon-name> [folder]
+npx icons-master add <icon-name> [folder]
 ```
 
 ### Remove an icon
 
 ```bash
-icons-master remove <icon-name> [folder]
+npx icons-master remove <icon-name> [folder]
 ```
 
 - `<icon-name>` — icon name in kebab-case (e.g. `arrow-up`, `chevron-down`)
@@ -32,13 +34,13 @@ icons-master remove <icon-name> [folder]
 ## Examples
 
 ```bash
-icons-master add arrow-up
+npx icons-master add arrow-up
 # → Added ArrowUp to icons/arrows.ts
 
-icons-master add arrow-up src/icons
+npx icons-master add arrow-up src/icons
 # → Added ArrowUp to src/icons/arrows.ts
 
-icons-master remove arrow-up
+npx icons-master remove arrow-up
 # → Removed ArrowUp from icons/arrows.ts
 ```
 
