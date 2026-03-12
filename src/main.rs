@@ -1,9 +1,5 @@
-mod export_manager;
-mod models;
-mod utils;
-
-use crate::export_manager::{remove_icon_export, update_icon_export};
-use crate::models::LucideIcon;
+use icons_master::export_manager::{remove_icon_export, update_icon_export};
+use icons_master::models::LucideIcon;
 use reqwest::blocking::get;
 use std::env;
 use std::error::Error;
@@ -51,6 +47,6 @@ fn main() -> Result<(), Box<dyn Error>> {
 
 fn print_usage() {
     println!("Usage:");
-    println!("  icons-manager add <icon-name> [folder-path]");
-    println!("  icons-manager remove <icon-name> [folder-path]");
+    println!("  icons-master add <icon-name> [folder-path]");
+    println!("  icons-master remove <icon-name> [folder-path]");
 }
