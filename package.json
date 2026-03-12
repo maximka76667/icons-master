@@ -7,7 +7,7 @@
     "icons-master": "bin/index.js"
   },
   "files": [
-    "bin/"
+    "bin/index.js"
   ],
   "scripts": {
     "build": "cargo build --release"
