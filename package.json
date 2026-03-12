@@ -1,6 +1,6 @@
 {
   "name": "@maximka76667/icons-master",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool to manage lucide-react icon exports",
   "main": "bin/index.js",
   "bin": {
@@ -10,8 +10,6 @@
     "bin/"
   ],
   "scripts": {
-    "build": "cargo build --release",
-    "copy-bin": "if not exist bin mkdir bin && copy /y target\\release\\icons-master.exe bin\\",
-    "prepublishOnly": "npm run build && npm run copy-bin"
+    "build": "cargo build --release"
   }
 }
