@@ -1,6 +1,6 @@
 {
   "name": "@maximka76667/icons-master",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI tool to manage lucide-react icon exports",
   "main": "bin/index.js",
   "bin": {
